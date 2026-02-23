@@ -1,4 +1,4 @@
--- Students : u25581288 && u25256387
+-- Students : u25581288 
 
 CREATE TABLE Client(
     ClientID INT PRIMARY KEY AUTO_INCREMENT,
@@ -38,4 +38,5 @@ CREATE TABLE Laptop_Accessory(
     PRIMARY KEY(LaptopID,AccessoryID),
     FOREIGN KEY(LaptopID) REFERENCES Laptop(LaptopID),
     FOREIGN KEY(AccessoryID) REFERENCES Accessory(AccessoryID)
+
 );
